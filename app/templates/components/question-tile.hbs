@@ -1,1 +1,7 @@
-{{yield}}
+<li>Question: {{questionTitle.question}}</li>
+<li>Submitted by: {{questionTitle.author}}</li>
+<li>Content: {{questionTitle.comment}}</li>
+<li>Answer: {{question.answer}}</li>
+{{update-questionTitle questionTitle=questionTitle update="update"}}
+<button {{action 'delete' question}}>Delete</button>
+<hr>
