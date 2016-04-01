@@ -2,6 +2,7 @@
 
 This README outlines the details of collaborating on this Ember application.
 This is a question and answere app using Ember for epicodus .
+By Chris Houghton
 
 ## Prerequisites
 
