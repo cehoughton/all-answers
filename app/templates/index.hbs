@@ -3,5 +3,23 @@
 <h3>What would you like to know?</h3>
 <br>
 <br>
+<ul>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+<br>
+
+<h2>Questions</h2>
+<ul>
+  {{#each model.questions as |question|}}
+    <li>{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+{{new-question saveQuestion="saveQuestion"}}
+
+<hr>
+
+
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
