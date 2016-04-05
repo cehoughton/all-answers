@@ -3,17 +3,18 @@
 <h3>What would you like to know?</h3>
 <br>
 <br>
-<ul>
-  {{#each model.answers as |answer|}}
+<!-- <ul> -->
+  <!-- {{#each model.answers as |answer|}}
     {{answer-tile answer=answer}}
   {{/each}}
 </ul>
-<br>
+<br> -->
 
 <h2>Questions</h2>
 <ul>
   {{#each model.questions as |question|}}
-     {{question-tile question=question}}
+    <li> {{#link-to 'question' question.id}}{{question.questionTitle}}{{/link-to}}</li>
+     <!-- {{question-tile question=question}} -->
   {{/each}}
 </ul>
 {{new-question saveQuestion2="saveQuestion3"}}

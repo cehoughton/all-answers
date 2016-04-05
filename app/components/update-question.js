@@ -11,10 +11,10 @@ export default Ember.Component.extend({
         questionTitle: this.get('questionTitle'),
         author: this.get('author'),
         comment: this.get('comment'),
-        answers: this.get('answers'),
+        // answers: this.get('answers'),
       };
       this.set('updateQuestionForm', false);
-      this.sendAction('update', questionTitle, params);
+      this.sendAction('update', question, params);
     }
   }
 });
