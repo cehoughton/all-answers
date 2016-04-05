@@ -13,7 +13,7 @@
 <h2>Questions</h2>
 <ul>
   {{#each model.questions as |question|}}
-    <li>{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}</li>
+     {{question-tile question=question}}
   {{/each}}
 </ul>
 {{new-question saveQuestion2="saveQuestion3"}}

@@ -1,7 +1,9 @@
-<li>Question: {{questionTitle.question}}</li>
-<li>Submitted by: {{questionTitle.author}}</li>
-<li>Content: {{questionTitle.comment}}</li>
+{{#link-to 'question' question.id}}
+<li>Question: {{question.questionTitle}}</li>
+<li>Submitted by: {{question.author}}</li>
+<li>Content: {{question.comment}}</li>
 <li>Answer: {{question.answer}}</li>
-{{update-questionTitle questionTitle=questionTitle update="update"}}
+{{/link-to}}
+<!-- {{update-question question=question update="update"}}
 <button {{action 'delete' question}}>Delete</button>
-<hr>
+<hr> -->
