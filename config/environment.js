@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'all-answers',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://luminous-inferno-3913.firebaseio.com/',
+    firebase: 'https://allanswers.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
