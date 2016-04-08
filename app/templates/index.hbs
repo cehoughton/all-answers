@@ -8,14 +8,14 @@
 <h2>Questions</h2>
 <ul>
   {{#each model.questions as |question|}}
-    <li> {{#link-to 'question' question.id}}{{question.questionTitle}} by {{question.author}}{{/link-to}}</li>
-    
+    <li>{{questionAnswer question}} {{#link-to 'question' question.id}}{{question.questionTitle}} by {{question.author}}{{/link-to}}</li>
+
   {{/each}}
 </ul>
 {{new-question saveQuestion2="saveQuestion3"}}
 
 <hr>
-
+{{display-favorite}}
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}

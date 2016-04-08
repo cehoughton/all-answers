@@ -8,12 +8,14 @@
 
 {{new-answer question=model save2="save3"}}
 <br>
+<h2>Here are all of the answers</h2>
+<br>
 <ul>
   {{#each model.answers as |answer|}}
     {{answer-tile answer=answer}}
   {{/each}}
 </ul>
-
+{{display-favorite}}
 <br>
 
 {{update-question question=model update="update"}}
