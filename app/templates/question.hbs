@@ -1,6 +1,12 @@
 <h1>WELCOME</h1>
 
+<ul>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+
 {{question-tile question=model destroyQuestion="destroyQuestion"}}
 
-{{new-answer save2="save3" question=model}}
+{{new-answer question=model save2="save3"}}
 <button class="btn btn-danger" {{action 'delete' model}}>Delete</button>
