@@ -6,7 +6,11 @@
   {{/each}}
 </ul>
 
+
+{{update-question question=model update="update"}}
+
 {{question-tile question=model destroyQuestion="destroyQuestion"}}
 
 {{new-answer question=model save2="save3"}}
+<br>
 <button class="btn btn-danger" {{action 'delete' model}}>Delete</button>
